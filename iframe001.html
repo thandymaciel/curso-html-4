@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        iframe {
+            height: 400px;  
+            width: 400px;
+            border: 1px solid black;  /* isso sobrepõe o comando frameborder*/
+        }
+    </style>
+    <title>Estudos de iframe</title>
+</head>
+<body>
+    <!--tamanho padrão de um iframe 300px largura e 150px altura-->
+    <h1>testando o uso de um iframe</h1>
+    <p>Acessando o site do 
+        <iframe src="https://www.cursoemvideo.com" frameborder="666" height="500" scolling="auto"> <!--height é altura, mas vale o que está no css-->
+            <a href="https://www.cursoemvideo.com" target="_blank"></a> <!--nem todos os navegadores de dispositivo móveis são compatíveis, esse link só irá aparecer se o primeiro não der certo-->
+        </iframe>  <!--quando essa tag é digitada sem "<" e clicada no atalho o iframe aparece sem bordas no site -->
+       para aprender a programar.
+    </p>
+    <p>O site do 
+        <iframe src="https://www.google.com.br" frameborder="0"></iframe> 
+        também é muito legal!
+    </p> <!--alguns sites tem proteção contra iframes, como nesse caso-->
+    <p>O repositório do guanabara
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="200" width="600"> <!--width é largura, mas vale o que está no css-->
+            <a href="https://gustavoguanabara.github.io" target="_blank"></a> <!--target blank significa abrir em uma outra aba-->
+        </iframe>
+        também é bem legal!
+    </p>
+
+    <!-- scolling= "auto"   se o conteúdo do iframe exceder seu tamanho, então ele cria uma barra de rolagem-->
+    <!-- scolling= "yes"   cria barra de rolagem-->
+    <!-- scolling= "no"   não cria barra de rolagem, mas alguns navegadores criam mesmo assim, como o chrome-->
+    <!-- frameborder  só aceita dois valores, 0 para não ter borda e qualquer outra valor para ter uma borda de 1px-->
+
+
+</body>
+</html>
