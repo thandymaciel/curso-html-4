@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>faça uma escolha</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam obcaecati adipisci inventore explicabo, facere, asperiores, odit harum ad velit deleniti et sapiente corrupti reiciendis? Libero laboriosam facere eius alias odit!
+    </p>
+
+    <ul>
+        <li><a href="paginasextras/pag002.html" target="iframe" >Tabelas</a></li> <!--se não usar o target com name a página não aparece no iframe -->
+        <li><a href="paginasextras/pag001.html" target="iframe">Segunda página</a></li>
+        <li><a href="paginasextras/pag003.html" target="iframe">Terceira página</a></li>
+    </ul>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nam recusandae nisi voluptate! Soluta asperiores sint incidunt culpa exercitationem. Magnam ipsa nisi itaque eaque sapiente libero rerum tempore ratione illum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum eos fugit iusto. Numquam est veniam, cupiditate fuga, minima consequuntur beatae delectus nobis autem, in earum accusantium veritatis aut facere nihil.
+    </p>
+    <!--se não usar o target com name a página não aparece no iframe -->
+    <iframe id="tela" name="iframe" src="paginasextras/pag003.html">    <!--também tem o parâmetro srcdoc  que pode criar uma outra página do zero com códigos escrito entre as aspas-->
+        <p>infelizmente seu navegador não é compatível</p>
+    </iframe>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur voluptate molestias doloribus fugiat magni maiores odit dolorem similique nemo, vero cumque placeat magnam, officiis eos exercitationem esse quaerat! Quibusdam?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati soluta voluptates qui eos quae fuga at numquam rerum sit minima, molestias repudiandae, voluptatibus sunt libero reiciendis iusto esse placeat possimus.
+    </p>
+</body>
+</html>
